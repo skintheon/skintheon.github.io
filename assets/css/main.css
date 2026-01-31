@@ -3088,6 +3088,7 @@ ol {
 
 .hero-area .hero-slider .single-slider .content p {
   margin-top: 20px;
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3342,6 +3343,7 @@ ol {
 
 .featured-categories .single-category ul {
   margin-top: 20px;
+  max-width: 200px;
 }
 
 .featured-categories .single-category ul li {
@@ -6694,8 +6696,14 @@ blockquote span {
 
 .shopping-cart .form-control {
   padding: 0 18px;
-  -webkit-transition: color 0.25s, background-color 0.25s, border-color 0.25s;
-  transition: color 0.25s, background-color 0.25s, border-color 0.25s;
+  -webkit-transition:
+    color 0.25s,
+    background-color 0.25s,
+    border-color 0.25s;
+  transition:
+    color 0.25s,
+    background-color 0.25s,
+    border-color 0.25s;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   background-color: #fff;
@@ -7323,8 +7331,14 @@ blockquote span {
 
 .account-login .form-group .form-control {
   padding: 0 18px;
-  -webkit-transition: color 0.25s, background-color 0.25s, border-color 0.25s;
-  transition: color 0.25s, background-color 0.25s, border-color 0.25s;
+  -webkit-transition:
+    color 0.25s,
+    background-color 0.25s,
+    border-color 0.25s;
+  transition:
+    color 0.25s,
+    background-color 0.25s,
+    border-color 0.25s;
   border: 1px solid #e0e0e0;
   background-color: #fff;
   color: #505050;
@@ -7409,8 +7423,14 @@ blockquote span {
 
 .register-form .form-group .form-control {
   padding: 0 18px;
-  -webkit-transition: color 0.25s, background-color 0.25s, border-color 0.25s;
-  transition: color 0.25s, background-color 0.25s, border-color 0.25s;
+  -webkit-transition:
+    color 0.25s,
+    background-color 0.25s,
+    border-color 0.25s;
+  transition:
+    color 0.25s,
+    background-color 0.25s,
+    border-color 0.25s;
   border: 1px solid #e0e0e0;
   background-color: #fff;
   color: #505050;
