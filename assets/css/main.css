@@ -32,13 +32,13 @@ Index Of css
 /*======================================
     Normalize CSS
 ========================================*/
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"); */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  /* font-family: "Manrope", sans-serif; */
   font-weight: 500;
   font-style: normal;
   color: #888;
@@ -1099,7 +1099,10 @@ ol {
 }
 
 .section-title p {
-  font-size: 14px;
+  font-size: 18px;
+  font-style: italic;
+  color: #D89D5A;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3047,18 +3050,38 @@ ol {
 }
 
 .hero-area .hero-slider .single-slider .content h2 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 800;
-  color: #081828;
+  /* color: #081828; */
 }
 
 .hero-area .hero-slider .single-slider .content h2 span {
-  font-size: 17px;
+  font-size: 36px;
   font-weight: 600;
   display: block;
-  color: #8a8a8a;
+  /* color: #8a8a8a; */
   margin-bottom: 10px;
 }
+
+.lotion_color {
+  color : #78AE43;
+}
+.cleanser_color{
+  color : #3573AD;
+}
+.sunscreen_color { 
+  color : #D89D5A;
+}
+.clarifying_color {
+  color: #74392B;
+}
+.vitaminc_color {
+  color: #E6A364;
+}
+.agedefy_color {
+  color : #748FA8;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-slider .single-slider .content h2 span {
@@ -3336,19 +3359,20 @@ ol {
 }
 
 .featured-categories .single-category .heading {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 700;
-  color: #081828;
+  /* color: #081828 */
 }
 
 .featured-categories .single-category ul {
   margin-top: 20px;
-  max-width: 200px;
+  max-width: 260px;
 }
 
 .featured-categories .single-category ul li {
   display: block;
   margin-bottom: 4px;
+  list-style: disc;
 }
 
 .featured-categories .single-category ul li:last-child {
@@ -3367,11 +3391,11 @@ ol {
 .featured-categories .single-category img {
   position: absolute;
   right: -30px;
-  top: 50%;
+  top: 43%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: -1;
-  width: 250px;
+  width: 280px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3475,16 +3499,17 @@ ol {
 }
 
 .single-product .product-info .category {
-  color: #888;
-  font-size: 13px;
+  font-size: 16px;
   display: block;
   margin-bottom: 2px;
+  font-weight: 700;
 }
-
+.single-product .product-info .title{
+  line-height: 12px;
+}
 .single-product .product-info .title a {
   font-size: 16px;
   font-weight: 700;
-  color: #081828;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -3525,7 +3550,7 @@ ol {
 .single-product .product-info .price span {
   font-size: 17px;
   font-weight: 700;
-  color: #f1861a;
+  color: #000;
   display: inline-block;
 }
 
@@ -8415,4 +8440,9 @@ blockquote span {
 
 .hidden {
   display: none;
+}
+
+
+.actives_style{
+  font-size: 18px;
 }
