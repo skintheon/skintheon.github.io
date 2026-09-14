@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <!-- Prevent search engines from indexing the redirect URLs -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  
+  <!-- Redirect Target Configuration -->
+  <meta name="redirect-target" content="../products/c-fusion-serum.html">
+  
+  <!-- Meta Refresh Fallback for browsers with JavaScript disabled -->
+  <meta http-equiv="refresh" content="0; url=../products/c-fusion-serum.html">
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .container {
+      text-align: center;
+    }
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border-left-color: #000;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    a {
+      color: #000;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <p>Redirecting you to the product page...</p>
+    <p>If you are not redirected automatically, <a href="../products/c-fusion-serum.html">click here</a>.</p>
+  </div>
+
+  <!-- Reusable JS Redirect Utility -->
+  <script src="../assets/js/qr-redirect.js"></script>
+</body>
+</html>

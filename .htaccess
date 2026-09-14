@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Rewrite clean URLs for QR codes:
+    # E.g. /qr/age-defy-serum will map to /qr/age-defy-serum.html internally
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/qr/$1.html -f
+    RewriteRule ^qr/([^/]+)/?$ qr/$1.html [L]
+</IfModule>
