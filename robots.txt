@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow non-indexable utility, checkout, cart and QR redirect paths
+Disallow: /qr/
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /account-password-recovery.html
+Disallow: /mail-success.html
+
+Sitemap: https://skintheon.co.uk/sitemap.xml
