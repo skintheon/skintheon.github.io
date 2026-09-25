@@ -5919,6 +5919,11 @@ blockquote span {
   border-radius: 6px;
 }
 
+@media (max-width: 766px) {
+  .featured-categories .single-category .features li:not(:first-child)::before{
+      top: 5px;
+  }
+}
 .product-details-info .info-body .features li:last-child {
   margin: 0;
 }
@@ -8579,4 +8584,272 @@ blockquote span {
 
 .actives_style{
   font-size: 18px;
+}
+
+/* ==========================================================================
+   Mobile & Tablet Responsive Fixes for index.html
+   ========================================================================== */
+
+/* Universal Mobile & Tablet Slider Controls Fix (<992px) */
+@media (max-width: 991px) {
+  .hero-area .slider-head {
+    overflow: visible !important;
+  }
+  .hero-area .tns-controls button {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin-top: 0 !important;
+    opacity: 0.95 !important;
+    visibility: visible !important;
+    z-index: 50 !important;
+    width: 32px !important;
+    height: 48px !important;
+    background: rgba(241, 134, 26, 0.9) !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .hero-area .tns-controls button:first-child {
+    left: 0 !important;
+    border-radius: 0 4px 4px 0 !important;
+  }
+  .hero-area .tns-controls button:last-child {
+    right: 0 !important;
+    border-radius: 4px 0 0 4px !important;
+  }
+}
+
+/* Tablet Viewport (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Hero Slider Tablet Layout */
+  .hero-area .hero-slider .single-slider {
+    height: 380px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-bottom: 12px !important;
+  }
+  .hero-area .hero-slider .single-slider::before {
+    display: none !important;
+  }
+  .hero-area .hero-slider .single-slider .content {
+    position: absolute !important;
+    left: 25px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    padding: 0 !important;
+    width: 60% !important;
+    max-width: 60% !important;
+    z-index: 5 !important;
+  }
+  .hero-area .hero-slider .single-slider .content p br {
+    display: none !important;
+  }
+  .hero-area .hero-slider .single-slider .content h2 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .hero-area .hero-slider .single-slider .content h2 span {
+    font-size: 15px !important;
+    margin-bottom: 4px !important;
+  }
+  .hero-area .hero-slider .single-slider .content p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 13px !important;
+    line-height: 19px !important;
+    margin-top: 8px !important;
+  }
+  .hero-area .hero-slider .single-slider img {
+    position: absolute !important;
+    right: 15px !important;
+    top: 50% !important;
+    left: auto !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    width: auto !important;
+    max-width: 42% !important;
+    height: 300px !important;
+    max-height: 85% !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+    object-fit: contain !important;
+  }
+
+  /* Featured Categories 2-Column Grid on Tablet */
+  .featured-categories .row > [class*="col-"] {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .featured-categories .single-category {
+    padding: 22px 15px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    min-height: 250px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    height: 100% !important;
+  }
+  .featured-categories .single-category .heading,
+  .featured-categories .single-category span,
+  .featured-categories .single-category ul {
+    width: 60% !important;
+    max-width: 60% !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+  .featured-categories .single-category .heading {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+  .featured-categories .single-category ul {
+    margin-top: 12px !important;
+  }
+  .featured-categories .single-category ul li {
+    font-size: 12px !important;
+    line-height: 17px !important;
+    word-break: break-word !important;
+  }
+  .featured-categories .single-category img {
+    width: 125px !important;
+    max-width: 42% !important;
+    height: auto !important;
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    object-fit: contain !important;
+  }
+}
+
+/* Mobile Viewport (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Hero Slider Mobile Layout */
+  .hero-area .hero-slider .single-slider {
+    height: 360px !important;
+    min-height: 360px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-bottom: 12px !important;
+  }
+  .hero-area .hero-slider .single-slider::before {
+    display: none !important;
+  }
+  .hero-area .hero-slider .single-slider .content {
+    position: absolute !important;
+    left: 15px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    padding: 0 !important;
+    width: 60% !important;
+    max-width: 60% !important;
+    z-index: 5 !important;
+  }
+  .hero-area .hero-slider .single-slider .content p br {
+    display: none !important;
+  }
+  .hero-area .hero-slider .single-slider .content h2 {
+    font-size: 17px !important;
+    line-height: 23px !important;
+  }
+  .hero-area .hero-slider .single-slider .content h2 span {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin-bottom: 2px !important;
+  }
+  .hero-area .hero-slider .single-slider .content p {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 6px !important;
+    font-size: 11px !important;
+    line-height: 15px !important;
+    color: #444 !important;
+  }
+  .hero-area .hero-slider .single-slider .content h3 {
+    margin-top: 8px !important;
+    font-size: 15px !important;
+  }
+  .hero-area .hero-slider .single-slider .content .button {
+    margin-top: 10px !important;
+  }
+  .hero-area .hero-slider .single-slider .content .button .btn {
+    padding: 6px 14px !important;
+    font-size: 11px !important;
+  }
+  .hero-area .hero-slider .single-slider img {
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    left: auto !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    width: auto !important;
+    max-width: 42% !important;
+    height: 230px !important;
+    max-height: 85% !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    object-fit: contain !important;
+  }
+
+  /* Featured Categories Mobile Layout */
+  .featured-categories .single-category {
+    padding: 20px 12px !important;
+    margin-top: 15px !important;
+    overflow: hidden !important;
+    position: relative !important;
+    border-radius: 6px !important;
+    min-height: 230px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .featured-categories .single-category .heading,
+  .featured-categories .single-category span,
+  .featured-categories .single-category ul {
+    width: 60% !important;
+    max-width: 60% !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+  .featured-categories .single-category .heading {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+  .featured-categories .single-category span {
+    font-size: 11px !important;
+  }
+  .featured-categories .single-category ul {
+    margin-top: 10px !important;
+  }
+  .featured-categories .single-category ul li {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    margin-bottom: 2px !important;
+    word-break: break-word !important;
+  }
+  .featured-categories .single-category img {
+    width: 115px !important;
+    max-width: 42% !important;
+    height: auto !important;
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    opacity: 1 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    object-fit: contain !important;
+  }
+
+  .single-product {
+    margin-top: 20px !important;
+  }
 }
