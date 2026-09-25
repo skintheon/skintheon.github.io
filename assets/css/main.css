@@ -3082,6 +3082,24 @@ ol {
   color : #748FA8;
 }
 
+.cleanser_before_color li::before{
+  background-color: #3573AD !important;
+}
+.lotion_before_color li::before{
+  background-color: #78AE43 !important;
+}
+.tintflex_before_color li::before{
+  background-color: #D89D5A !important;
+}
+.clarifying_before_color li::before{
+  background-color: #74392B !important;
+}
+.vitaminc_before_color li::before{
+  background-color: #E6A364 !important;
+}
+.agedefy_before_color li::before{
+  background-color: #748FA8 !important;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-slider .single-slider .content h2 span {
@@ -3366,7 +3384,7 @@ ol {
 
 .featured-categories .single-category ul {
   margin-top: 20px;
-  max-width: 260px;
+  max-width: 270px;
 }
 
 .featured-categories .single-category ul li {
@@ -5886,6 +5904,20 @@ blockquote span {
   background-color: #f1861a;
   border-radius: 6px;
 }
+.featured-categories .single-category .features li{
+  display: block;
+  position: relative;
+  padding-left: 15px;
+}
+.featured-categories .single-category .features li:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8px;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+}
 
 .product-details-info .info-body .features li:last-child {
   margin: 0;
@@ -7505,6 +7537,108 @@ blockquote span {
 .contact-us {
   position: relative;
   background-color: #fff;
+  padding: 80px 0;
+}
+
+@media (max-width: 767px) {
+  .contact-us {
+    padding: 50px 0;
+  }
+}
+
+.contact-us .contact-info {
+  margin-top: 40px;
+}
+
+.contact-us .single-info-card {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 45px 25px;
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.contact-us .single-info-card:hover {
+  background-color: #ffffff;
+  border-color: #f1861a;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.contact-us .single-info-card .icon-box {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background-color: rgba(241, 134, 26, 0.1);
+  color: #f1861a;
+  border-radius: 50%;
+  font-size: 28px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-us .single-info-card:hover .icon-box {
+  background-color: #f1861a;
+  color: #ffffff;
+}
+
+.contact-us .single-info-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #081828;
+  margin-bottom: 12px;
+}
+
+.contact-us .single-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us .single-info-card ul li {
+  font-size: 14px;
+  color: #555;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.contact-us .single-info-card ul li a {
+  color: #555;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-us .single-info-card ul li a:hover {
+  color: #f1861a;
 }
 
 .contact-us .contact-info .single-info-head {

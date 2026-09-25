@@ -298,7 +298,7 @@
           <div class="col-lg-8 col-md-6 col-12">
             <div class="nav-inner">
               <!-- Start Mega Category Menu -->
-              <div class="mega-category-menu">
+              <!-- <div class="mega-category-menu">
                 <span class="cat-button"
                   ><i class="lni lni-menu"></i>All Categories</span
                 >
@@ -308,7 +308,7 @@
                   <li><a>Sunscreen</a></li>
                   <li><a>Serums</a></li>
                 </ul>
-              </div>
+              </div> -->
               <!-- End Mega Category Menu -->
               <!-- Start Navbar -->
               <nav class="navbar navbar-expand-lg">
@@ -351,6 +351,21 @@
                       >
                       <ul class="sub-menu collapse" id="submenu-1-2">
                         <li class="nav-item">
+                          <a href="products/gentle-skin-cleanser.html"
+                            >Gentle Skin Cleanser</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="products/moisturising-lotion.html"
+                            >Moisturising Lotion</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="products/tint-flex-spf-50-sunscreen.html"
+                            >Tint Flex SPF 50+ Sunscreen</a
+                          >
+                        </li>
+                        <li class="nav-item">
                           <a href="products/clarifying-serum.html"
                             >Clarifying Serum</a
                           >
@@ -363,21 +378,6 @@
                         <li class="nav-item">
                           <a href="products/age-defy-serum.html"
                             >Age-Defy Serum</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a href="products/tint-flex-spf-50-sunscreen.html"
-                            >Tint Flex SPF 50+ Sunscreen</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a href="products/gentle-skin-cleanser.html"
-                            >Gentle Skin Cleanser</a
-                          >
-                        </li>
-                        <li class="nav-item">
-                          <a href="products/moisturising-lotion.html"
-                            >Moisturising Lotion</a
                           >
                         </li>
                       </ul>
@@ -687,7 +687,7 @@
                 >
               </h3>
               <span>Infused with Korean ingredient</span>
-              <ul>
+              <ul class="features cleanser_before_color">
                 <li class="actives_style cleanser_color">Actives :</li>
                 <li><a>Enriched with 3 Essential Ceramide (EOP, NP, AP)</a></li>
                 <li><a>Sodium Hyaluronate, Glycerin</a></li>
@@ -712,7 +712,7 @@
                 >
               </h3>
               <span>Infused with Korean ingredient</span>
-              <ul>
+              <ul class="features lotion_before_color">
                 <li class="actives_style lotion_color">Actives :</li>
                <li><a>Enriched with 3 Essential Ceramide (EOP, NP, AP)</a></li>
                 <li><a>Sodium Hyaluronate, Glycerin</a></li>
@@ -737,7 +737,7 @@
                 >
               </h3>
               <span>Infused with Korean ingredient</span>
-              <ul>
+              <ul class="features tintflex_before_color">
                  <li class="actives_style sunscreen_color">Actives :</li>
                 <li><a>Adaptive Tint Technology</a></li>
                 <li><a>Micro-Encapsulated</a></li>
@@ -765,7 +765,7 @@
                 >
               </h3>
                <span>Infused with Argentine ingredient</span>
-              <ul>
+              <ul class="features clarifying_before_color">
                 <li class="actives_style clarifying_color">Actives :</li>
                 <li><a>Tranexamic Acid Booster</a></li>
                 <li><a>Azelaic Acid</a></li>
@@ -792,7 +792,7 @@
                 >
               </h3>
               <span>Infused with Korean ingredient</span>
-              <ul>
+              <ul class="features vitaminc_before_color">
                 <li class="actives_style vitaminc_color">Actives :</li>
                 <li><a>5 Types Of Stable Vit-c</a></li>
                 <li><a>Sodium Hyaluronate</a></li>
@@ -818,7 +818,7 @@
                 >
               </h3>
               <span>Infused with French ingredient</span>
-              <ul>
+               <ul class="features agedefy_before_color">
                 <li class="actives_style agedefy_color">Actives :</li>
                 <li><a>3- RETINOID COMPLEX</a></li>
                 <li><a>Matrixyl 3000 Peptides</a></li>
@@ -1168,7 +1168,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-9 col-md-8 col-12">
+              <!-- <div class="col-lg-9 col-md-8 col-12">
                 <div class="footer-newsletter">
                   <h4 class="title">
                     Subscribe to our Newsletter
@@ -1196,7 +1196,7 @@
                     </form>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -1376,7 +1376,7 @@
       tns({
         container: ".hero-slider",
         slideBy: "page",
-        autoplay: false,
+        autoplay: true,
         autoplayButtonOutput: false,
         mouseDrag: true,
         gutter: 0,
